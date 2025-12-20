@@ -1,0 +1,80 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bs-body-font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar,
+.btn {
+  font-family: "Rajdhani", sans-serif;
+}
+.navbar-brand img {
+  width: 50px;
+}
+#home {
+  min-height: 100dvh;
+  height: max-content;
+  background:
+    linear-gradient(
+      rgba(34, 32, 28, 0.95),
+      rgba(34, 32, 28, 0.95)
+    ),
+    url("hero.jpg");
+}
+
+#home h1 {
+  font-size: 4rem;
+}
+
+.hero-icons svg {
+  width: 20px;
+  height: 20px;
+}
+
+.bullet {
+  border-radius: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    opacity: 100%;
+  }
+
+  50% {
+    opacity: 30%;
+  }
+}
+
+.pills {
+  background-color: rgb(238, 236, 232);
+  white-space: nowrap;
+}
+
+#products {
+  background-image: radial-gradient(#e8e8e8 5%, transparent 0);
+  background-size: 5px 5px;
+}
+footer {
+  background-color: rgb(34, 32, 28);
+}
+label::after {
+  content: '*';
+  color: red;
+  margin-left: .3rem;
+}
+.why-icon {
+  height: fit-content;
+  width: fit-content;
+}
